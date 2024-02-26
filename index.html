@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem1</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f1f1f1;
+      padding: 10px 10px;
+    }
+
+    .menu-item {
+      /* TODO */
+      padding: 12px;
+      list-style-type: none; /* loại bỏ dấu chấm tròn trước */
+      display: flex;
+    }
+
+    .menu-item a {
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .menu-item a:hover {
+      background-color: red;
+      color: white;
+    }
+
+    .menu-item a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    #content {
+      min-height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div class="header-left">
+        <a href="#" class="logo">
+          <img src="./hinhanh/movie_logo.png" class="logo" height="70px">
+        </a>
+      </div>
+
+      <div class="header-right">
+        <ul class="menu-item">
+          <li> <a class="active" href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum dignissimos eos sed accusantium asperiores
+        odit aperiam voluptatibus! Cum fugit et animi quos reiciendis molestiae commodi nam deleniti, tenetur quis.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

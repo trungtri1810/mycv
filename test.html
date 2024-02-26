@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .flex-layout{
+            display: flex;
+            background-color: black;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* cách viết gộp lại
+            flex-flow: row wrap;
+            */
+            /*canh các phan tử*/
+            /*justify-content: center;*/
+            align-items: center;
+        }
+        .box-layout{
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            margin: 20px;
+            font-size: 20px;
+        }
+        @media(max-width: 767px){
+            .flex-layout{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-layout">
+        <div class="box-layout">Box 1</div>
+        <div class="box-layout">Box 2</div>
+        <div class="box-layout">Box 3</div>
+        <div class="box-layout">Box 4</div>
+        <div class="box-layout">Box 5</div>
+        <div class="box-layout">Box 6</div>
+        <div class="box-layout">Box 7</div>
+        <div class="box-layout">Box 8</div>
+        <div class="box-layout">Box 9</div>
+        <div class="box-layout">Box 10</div>
+    </div>
+</body>
+</html>
